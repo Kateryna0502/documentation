@@ -65,9 +65,7 @@ body {
   position: sticky;
   top: 177px;
 }
-/* .sidebar {
-  max-width: 385px;
-} */
+
 .sidebar {
   li {
     list-style: none;
