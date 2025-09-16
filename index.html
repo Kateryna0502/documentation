@@ -4,60 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="layout">
-      <!-- Ліве меню -->
+    <body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul class="title">
+          <li>
+            <a href ="" class="eng">ENG</a>
+          </li>
+          <li class="documentation">
+            <a href="index.html">Documentation  </a>
+            <span>/</span>
+            <a href="flip-card.html"> Who's using</a>
+          </li>
+      </nav>
+      </ul>
+      <img class="logo" src="images/konstrukt1.svg" alt="logo">
+    </header>
+    <div class="wrap">
       <aside class="sidebar">
-        <h2>TWIG</h2>
-        <h2>DOCUMENTATION</h2>
-        <h2>WORKS USING</h2>
-
-        <nav>
-          <ul>
-            <li class="active">Introduction</li>
-            <li>Core Components</li>
-            <li>React Fundamentals</li>
-            <li>Handling Text Input</li>
-          </ul>
-        </nav>
+      <div class="sidebar-inner">
+        <ul>
+          <li>
+        <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+        <a href="#core-components">core components</a>
+          </li>
+          <li>
+        <a href="#react-fundamentals">react fundamentals</a>
+          </li>
+          <li>
+        <a href="#handling-text-input">handling text input</a>
+          </li>
+        </ul>
+      </div>
       </aside>
-
-      <!-- Основний контент -->
-      <main class="content">
-        <header class="brand">KONSTRUKT</header>
-
-        <section class="chapter">
-          <h3>INTRODUCTION <span class="chapter-num">Chapter 1</span></h3>
-          <p>Welcome to the very start of your React Native journey! ...</p>
-        </section>
-
-        <section class="chapter">
-          <h3>CORE COMPONENTS <span class="chapter-num">Chapter 2</span></h3>
+      <main>
+        <img id="bg-picture" src="images/bg-picture.svg"  alt="">
+        <section>
+          <h2 id="introduction">Introduction<span>Chapter 1</span></h2>
           <p>
-            React Native is an open source framework for building Android and
-            iOS applications ...
+            Welcome to the very start of your React Native journey! If you're looking for environment setup instructions,
+            they've moved to <span class="underline">their own section</span>. Continue reading for an introduction to the
+            documentation, Native Components,
+            React, and more!
           </p>
         </section>
-
-        <section class="chapter">
-          <h3>REACT FUNDAMENTALS <span class="chapter-num">Chapter 3</span></h3>
+        <section>
+          <h2 id="core-components">core components<span>Chapter 2</span></h2>
           <p>
-            React Native runs on React, a popular open source library for
-            building user interfaces...
+            React Native is an open source framework for building Android and iOS applications using React and the app
+            platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to
+            describe the appearance and behavior of your UI using React components: <em>bundles of reusable, nestable
+              code</em>. You
+            can
+            learn more about React in the next section. But first, let’s cover how components work in React Native.
           </p>
         </section>
-
-        <section class="chapter">
-          <h3>
-            HANDLING TEXT INPUT <span class="chapter-num">Chapter 4</span>
-          </h3>
+        <section>
+          <h2 id="react-fundamentals">react fundamentals<span>Chapter 3</span></h2>
           <p>
-            TextInput is a Core Component that allows the user to enter text...
+            React Native runs <span class="underline">on React</span>, a popular open source library for building user
+            interfaces with JavaScript. To make
+            the
+            most of React Native, it helps to understand React itself. This section can get you started or can serve as a
+            refresher course.
+          </p>
+          <p>We’re going to cover the core concepts behind React:</p>
+          <p><span class="bold">+ components.</span> The rest of this introduction to React uses cats in its examples:
+            friendly, approachable creatures
+            that need names and a cafe to work in.
+          </p>
+          <p>
+            <span class="bold">+ JSX.</span> React and React Native use JSX, a syntax that lets you write elements inside
+            JavaScript like so:
+            <span class="bgGray">&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;.</span>
+          </p>
+          <p>The React docs have <span class="underline">a comprehensive guide to JSX</span> you can refer to learn even
+            more. Because JSX is JavaScript, you
+            can use variables inside it. Here you are declaring a <span class="bgGray">name</span> for the cat, name, and
+            embedding it with curly braces
+            inside <span class="bgGray">&lt;Text&gt;</span>
+          </p>
+          <p><span class="bold">+ props.</span> Props is short for “properties”.</p>
+          <p>
+            <span class="bold">+ state.</span> While you can think of props as arguments you use to configure how components
+            render, state is like a
+            component’s personal data storage. State is useful for handling data that changes over time or that comes from
+            user interaction. State gives your components memory!
+          </p>
+        </section>
+        <section>
+          <h2 id="handling-text-input">handling text input<span>Chapter 4</span></h2>
+          <p>TextInput is a Core Component that allows the user to enter text. It has an <em>onChangeText</em> prop that
+            takes a
+            function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be
+            called
+            when the text is submitted.</p>
+          <p>
+            For example, let's say that as the user types, you're translating their words into a different language. In this
+            new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be
+            translated
+            as "🍕 🍕".
           </p>
         </section>
       </main>
     </div>
+  </div>
+</body>
   </body>
 </html>
