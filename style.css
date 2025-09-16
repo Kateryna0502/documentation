@@ -32,17 +32,27 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-
   letter-spacing: 0.03em;
-
   color: #000000;
-
   mix-blend-mode: normal;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .logo {
   width: 238px;
   height: 54px;
+}
+
+.h2 {
+  width: 206px;
+  height: 48px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  color: #000000;
 }
 
 .wrap {
